@@ -1,0 +1,15 @@
+// BREAKPOINTS
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;
+
+// SCREEN
+$screen-sm: 540px;
+$screen-md: 720px;
+$screen-lg: 960px;
+$screen-xl: 1140px;
+
+// IMPORTS
+@import "container.scss";
+

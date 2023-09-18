@@ -1,0 +1,33 @@
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
+
+// SM
+@media screen and (min-width: $breakpoints-sm) {
+    .container {
+        max-width:  $screen-sm;
+    }
+}
+
+// MD
+@media screen and (min-width: $breakpoints-md) {
+    .container {
+        max-width:  $screen-md;
+    }
+}
+
+// LG
+@media screen and (min-width: $breakpoints-lg) {
+    .container {
+        max-width:  $screen-lg;
+    }
+}
+
+// XL
+@media screen and (min-width: $breakpoints-xl) {
+    .container {
+        max-width:  $screen-xl;
+    }
+}
