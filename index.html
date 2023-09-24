@@ -21,15 +21,28 @@
     <link rel="stylesheet" href="/assets/style/css/global-style.css" />
 
     <!-- IMPORTS JS -->
+    <script src="/assets/js/initialCommands.js"></script>
     <script src="/assets/plugins/tailwind/tailwind.min.js"></script>
+    <script src="/assets/js/theme/tailwind.config.js"></script>
     <script defer src="/assets/plugins/alpinejs/alpinejs.min.js"></script>
     <script src="/assets/js/index.js"></script>
 
     <title>Studio Ana Rodry</title>
   </head>
 
-  <body>
-
-
+  <body class="bg-secondary-50">
+    <!-- LOADING -->
+    <div
+      id="loading"
+      class="loading-page w-full h-screen z-50 fixed flex justify-center items-center"
+    >
+      <div class="content">
+        <div class="loading">
+          <p>loading</p>
+          <span></span>
+        </div>
+      </div>
+    </div>   
+     
   </body>
 </html>
