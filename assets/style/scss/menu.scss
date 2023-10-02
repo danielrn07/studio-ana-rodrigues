@@ -1,0 +1,10 @@
+#menu-nav {
+  transition: 0.5s background-color;
+  backdrop-filter: blur(0px);
+
+  &.menu-nav--blur {
+    transition: 0.5s background-color;
+    backdrop-filter: blur(7px);
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+  }
+}

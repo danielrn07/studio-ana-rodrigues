@@ -1,6 +1,10 @@
 tailwind.config = {
   theme: {
     extend: {
+      fontFamily: {
+        nautigal: ['TheNautigal', 'cursive'],
+        poppins: ['Poppins', 'sans-serif']
+      },
       colors: {
         primary: {
           50: '#F8F7EE',
@@ -17,7 +21,7 @@ tailwind.config = {
             100: '#E7E7E7',
             900: '#3D3D3D',
           },
-      },
+      },      
     },
   },
 }

@@ -1,0 +1,16 @@
+@import "container.scss";
+
+.banner {
+    /* Imagem original - https://br.freepik.com/fotos-gratis/feche-o-retrato-de-uma-jovem-coquete-sorrindo-mostrando-gesto-de-paz-e-posando-de-pe-feliz-contra-o-fundo-rosa_34469783.htm#query=beauty%20salon&position=7&from_view=search&track=ais  */
+
+    background: url('/assets/img/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position: 63%;
+}
+
+
+@media (min-width: 1024px) {
+    .banner {
+        background-position: 45%;
+    }
+}
