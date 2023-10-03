@@ -11,12 +11,41 @@ $screen-lg: 960px;
 $screen-xl: 1140px;
 
 // COMPONENTS
-@import "container.scss";
-@import "loading.scss";
-@import "menu.scss";
-@import "animation.scss";
-@import "banner.scss";
+@import 'container.scss';
+@import 'loading.scss';
+@import 'menu.scss';
+@import 'animation.scss';
+@import 'banner.scss';
 
 // FONTS
-@import "fonts/poppins.scss";
-@import "fonts/thenautigal.scss";
+@import 'fonts/poppins.scss';
+@import 'fonts/thenautigal.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section {
+  min-height: 90vh;
+  padding-top: 8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+
+@media (max-width: 1280px) {
+  .section {
+    padding-bottom: 8rem;
+  }
+}
