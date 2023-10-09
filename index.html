@@ -92,11 +92,6 @@
             >Nossos Serviços</a
           >
           <a
-            href="/#precos"
-            class="font-poppins text-md font-semibold text-surface-900 hover:text-secondary-800 leading-6 text-gray-900"
-            >Preços</a
-          >
-          <a
             href="/#contato"
             class="font-poppins text-md font-semibold text-surface-900 hover:text-secondary-800 leading-6 text-gray-900"
             >Contato</a
@@ -158,12 +153,6 @@
                     >Nossos Serviços</a
                   >
                   <a
-                    href="/#precos"
-                    x-on:click="menuSideBar = false"
-                    class="font-poppins -mx-3 block rounded-lg py-2 text-base font-semibold leading-7 text-surface-900 hover:bg-gray-50"
-                    >Preços</a
-                  >
-                  <a
                     href="/#contato"
                     x-on:click="menuSideBar = false"
                     class="font-poppins -mx-3 block rounded-lg py-2 text-base font-semibold leading-7 text-surface-900 hover:bg-gray-50"
@@ -201,7 +190,7 @@
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="ml-2 h-6 w-6"
+              class="ms-2 h-6 w-6"
               viewBox="0 0 24 24"
             >
               <path
@@ -218,7 +207,7 @@
     <!-- OUR SERVICES -->
     <section id="nossos-servicos">
       <div class="container section flex flex-col items-center max-w-7xl">
-        <h2 class="text-center font-poppins text-3xl text-primary-500">
+        <h2 class="text-center font-poppins font-semibold text-3xl text-primary-500">
           Nossos Serviços
         </h2>
         <div class="flex items-center">
@@ -231,11 +220,14 @@
 
         <!-- IMAGE -->
         <div
-          class="container xl:grid xl:grid-cols-3 xl:gap-8 xl:gap-16 md:h-45 space-y-6 xl:space-y-0 mt-16"
+          class="container xl:grid xl:grid-cols-3 xl:gap-8 md:h-45 space-y-6 xl:space-y-0 mt-10 xl:mt-16"
         >
           <template x-for="service in services">
-            <div class="flex flex-col mx-auto w-60 lg:w-80">
-              <img :src="service.img" class="rounded-md" />
+            <div class="flex flex-col mx-auto w-60 lg:mw-80">
+              <img
+                :src="service.img"
+                class="shadow-lg rounded-md hover:scale-105 transition duration-300"
+              />
               <h3
                 x-text="service.title"
                 class="font-poppins text-secondary-800 mt-6 text-center font-semibold"
@@ -245,9 +237,83 @@
           </template>
         </div>
         <!-- /IMAGE -->
+
+        <!-- LIST OF SERVICES -->
+        <div
+          class="w-full mt-16 md:w-[45rem] xl:w-[71.831rem]"
+          x-data="{ activeTab: 'tab1' }"
+        >
+          <ul
+            class="bg-secondary-500 px-8 md:px-24 py-6 flex justify-between items-center rounded-t-md font-poppins font-medium"
+          >
+            <li class="">
+              <a
+                href="#cabelos"
+                @click="activeTab = 'tab1'"
+                :class="{'text-secondary-800': activeTab === 'tab1', '': activeTab !== 'tab1' }"
+                class="cursor-pointer"
+                >CABELOS</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#unhas"
+                @click="activeTab = 'tab2'"
+                :class="{'text-secondary-800': activeTab === 'tab2', '': activeTab !== 'tab2' }"
+                class="cursor-pointer"
+                >SOBRANCELHAS</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#sobrancelhas"
+                @click="activeTab = 'tab3'"
+                :class="{'text-secondary-800': activeTab === 'tab3', '': activeTab !== 'tab3' }"
+                class="cursor-pointer"
+                >UNHAS</a
+              >
+            </li>
+          </ul>
+
+          <div class="text-primary-800 font-poppins">
+            <div
+              x-show="activeTab === 'tab1'"
+              class="p-8 md:px-24 bg-secondary-50 rounded-b-md"
+            >
+              <ul class="flex flex-col list-disc list-inside gap-4">
+                <li>Progressiva</li>
+                <li>Selagem</li>
+                <li>Botox</li>
+                <li>Cauterização</li>
+                <li>Cronograma Capilar</li>
+              </ul>
+            </div>
+            <div
+              x-show="activeTab === 'tab2'"
+              class="p-8 md:px-24 bg-secondary-50 rounded-b-md"
+            >
+              <ul class="flex flex-col list-disc h-[11.5rem] list-inside gap-4">
+                <li>Design de Sobrancelha com Henna</li>
+                <li>Design de Sobrancelha sem Henna</li>
+              </ul>
+            </div>
+            <div
+              x-show="activeTab === 'tab3'"
+              class="p-8 md:px-24 bg-secondary-50 rounded-b-md"
+            >
+              <ul class="flex flex-col list-disc list-inside gap-4">
+                <li>Manicure</li>
+                <li>Pedicure</li>
+                <li>Alongamento em Gel</li>
+                <li>Banho de Gel</li>
+                <li>Blindagem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /LIST OF SERVICES -->
       </div>
     </section>
     <!-- /OUR SERVICES -->
-  
   </body>
 </html>
