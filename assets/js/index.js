@@ -1,3 +1,11 @@
+const breakpoints = {
+  xs: 320,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+}
+
 function state() {
   const openMenu = false
 
@@ -21,5 +29,41 @@ function state() {
     },
   ]
 
-  return { menuSideBar: false, openMenu, services }
+  const gallery = [
+    { path: '/assets/img/gallery/foto1.png' },
+    { path: '/assets/img/gallery/foto2.png' },
+    { path: '/assets/img/gallery/foto3.png' },
+    { path: '/assets/img/gallery/foto4.png' },
+    { path: '/assets/img/gallery/foto5.png' },
+    { path: '/assets/img/gallery/foto6.png' },
+    { path: '/assets/img/gallery/foto7.png' },
+    { path: '/assets/img/gallery/foto8.png' },
+    { path: '/assets/img/gallery/foto9.png' },
+    { path: '/assets/img/gallery/foto10.png' },
+  ]
+
+  return { menuSideBar: false, openMenu, services, gallery }
 }
+
+new Swiper('.carousel-gallery', {
+  watchSlidesProgress: true,
+  loop: true,
+  autoplay: true,
+  breakpoints: {
+    [breakpoints.xs]: {
+      slidesPerView: 2,
+    },
+    [breakpoints.sm]: {
+      slidesPerView: 2,
+    },
+    [breakpoints.md]: {
+      slidesPerView: 4,
+    },
+    [breakpoints.lg]: {
+      slidesPerView: 4,
+    },
+    [breakpoints.xl]: {
+      slidesPerView: 5,
+    },
+  },
+})

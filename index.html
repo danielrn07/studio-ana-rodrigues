@@ -19,13 +19,14 @@
 
     <!-- IMPORTS CSS -->
     <link rel="stylesheet" href="/assets/style/css/global-style.css" />
+    <link rel="stylesheet" href="/assets/plugins/swiper/css/swiper.min.css" />
 
     <!-- IMPORTS JS -->
-    <script src="/assets/js/initialCommands.js"></script>
     <script src="/assets/plugins/tailwind/tailwind.min.js"></script>
+    <script src="/assets/plugins/swiper/js/swiper-bundle.min.js"></script>
     <script src="/assets/js/theme/tailwind.config.js"></script>
     <script defer src="/assets/plugins/alpinejs/alpinejs.min.js"></script>
-    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/initialCommands.js"></script>
 
     <title>Studio Ana Rodry</title>
   </head>
@@ -92,6 +93,11 @@
             >Nossos Serviços</a
           >
           <a
+            href="/#galeria"
+            class="font-poppins text-md font-semibold text-surface-900 hover:text-secondary-800 leading-6 text-gray-900"
+            >Galeria</a
+          >
+          <a
             href="/#contato"
             class="font-poppins text-md font-semibold text-surface-900 hover:text-secondary-800 leading-6 text-gray-900"
             >Contato</a
@@ -153,6 +159,12 @@
                     >Nossos Serviços</a
                   >
                   <a
+                    href="/#galeria"
+                    x-on:click="menuSideBar = false"
+                    class="font-poppins -mx-3 block rounded-lg py-2 text-base font-semibold leading-7 text-surface-900 hover:bg-gray-50"
+                    >Galeria</a
+                  >
+                  <a
                     href="/#contato"
                     x-on:click="menuSideBar = false"
                     class="font-poppins -mx-3 block rounded-lg py-2 text-base font-semibold leading-7 text-surface-900 hover:bg-gray-50"
@@ -171,7 +183,7 @@
     <div id="inicio" class="h-[90vh] banner">
       <div class="bg-secondary-50 bg-opacity-50 flex items-center h-full">
         <div
-          class="container mx-auto lg:flex lg:flex-col max-w-7xl items-left md:items-center p-6 lg:px-8 text-primary-500"
+          class="container mx-auto lg:flex lg:flex-col max-w-7xl md:items-center p-6 lg:px-8 text-primary-500"
         >
           <h1 class="text-6xl md:text-8xl font-nautigal">Ana Rodrigues</h1>
           <p
@@ -179,25 +191,13 @@
           >
             Realçando a sua beleza, da cabeça aos pés, com paixão e perfeição!
           </p>
+
           <a
+            class="inline-flex button mt-8"
             href="https://www.instagram.com/studioanarodry/"
             target="_blank"
-            class="inline-flex items-left justify-center bg-secondary-800 mt-8 px-3 py-2 rounded-md hover:ring ring-opacity-50 ring-secondary-800"
           >
-            <div class="text-surface-50 font-poppins font-semibold">
-              Agende agora
-            </div>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="ms-2 h-6 w-6"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                fill="rgba(255,255,255,1)"
-              ></path>
-            </svg>
+            Agende agora
           </a>
         </div>
       </div>
@@ -207,11 +207,11 @@
     <!-- OUR SERVICES -->
     <section id="nossos-servicos">
       <div class="container section flex flex-col items-center max-w-7xl">
-        <h2
+        <h1
           class="text-center font-poppins font-semibold text-3xl text-primary-500"
         >
           Nossos Serviços
-        </h2>
+        </h1>
         <div class="flex items-center">
           <p class="mt-4 md:w-[37.5rem] lg:w-[56rem] text-center">
             Do cabelo às unhas e ao olhar, oferecemos serviços de primeira
@@ -318,53 +318,35 @@
     </section>
     <!-- /OUR SERVICES -->
 
-    <!-- CONTACT -->
-    <section id="contato" class="pt-[8rem]">
+    <!-- GALLERY -->
+    <section id="galeria" class="pt-[8rem]">
       <div
-        class="mx-auto h-80 w-full bg-cover bg-fixed bg-center bg-no-repeat"
+        class="w-full pb-48 mb-20 section-gallery relative bg-cover bg-no-repeat"
         style="
-          background-image: url('https://images.unsplash.com/photo-1522336284037-91f7da073525?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+          background-image: url('https://images.unsplash.com/photo-1493799817216-4b57dda4229f?auto=format&fit=crop&q=80&w=2672&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          background-attachment: fixed;
+          background-position: top-center;
         "
       >
-        <div
-          class="flex flex-col items-center justify-center w-full h-full bg-white bg-opacity-70"
-        >
-          <h2
-            class="text-secondary-800 font-poppins font-semibold text-3xl text-center"
-          >
-            Entre em contato agora
-          </h2>
-
-          <div class="flex flex-row gap-8 font-poppins font-semibold text-white">
-            <a
-              href="#"
-              target="_blank"
-              class="bg-secondary-800 inline-flex items-left justify-center mt-8 px-3 py-2 rounded-md hover:ring ring-opacity-50 ring-secondary-800"
-            >
-              <h1>WhatsApp</h1>
-              <img
-                src="/assets/img/icon/ic_whatsapp.svg"
-                class="w-6 ms-2"
-                alt=""
-              />
-            </a>
-
-            <a
-              href="https://www.instagram.com/studioanarodry/"
-              target="_blank"
-              class="bg-secondary-800 inline-flex items-left justify-center mt-8 px-3 py-2 rounded-md hover:ring ring-opacity-50 ring-secondary-800"
-            >
-              <h1>Instagram</h1>
-              <img
-                src="/assets/img/icon/ic_instagram.svg"
-                class="w-6 ms-2"
-                alt=""
-              />
-            </a>
+        <div class="container section">
+          <div class="-mb-56">
+            <div class="swiper carousel-gallery">
+              <div class="swiper-wrapper">
+                <template x-for="img in gallery">
+                  <div class="swiper-slide">
+                    <img
+                      :src="img.path"
+                      class="block w-full h-full object-cover top-0 left-0"
+                    />
+                  </div>
+                </template>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /CONTACT -->
+    <!-- /GALLERY -->
   </body>
+  <script src="/assets/js/index.js"></script>
 </html>

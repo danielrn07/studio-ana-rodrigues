@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,3 +44,33 @@ p {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
+.button {
+  padding: 12px 44px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #ea8516;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    padding: 12px 64px;
+  }
+}
+
+.section-gallery {
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: $background, $alpha: 0.5);
+    top: 0;
+    z-index: 0;
+  }
+}
+
