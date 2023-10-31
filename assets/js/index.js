@@ -42,7 +42,27 @@ function state() {
     { path: '/assets/img/gallery/foto10.png' },
   ]
 
-  return { menuSideBar: false, openMenu, services, gallery }
+  const contact = [
+    {
+      icon: '/assets/img/icon/ic_local.svg',
+      title: 'Conheça nosso espaço',
+      description: 'Rua João Lopes Araújo | Salomão - BA',
+    },
+    {
+      icon: '/assets/img/icon/ic_whatsapp.svg',
+      title: 'Agende seu horário',
+      description:
+        'teste',
+    },
+    {
+      icon: '/assets/img/icon/ic_instagram.svg',
+      title: 'Veja mais de nosso trabalho',
+      description:
+        'https://www.instagram.com/studioanarodry/',
+    },
+  ]
+
+  return { menuSideBar: false, openMenu, services, gallery, contact }
 }
 
 new Swiper('.carousel-gallery', {
