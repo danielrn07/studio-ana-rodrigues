@@ -49,12 +49,13 @@
     <!-- HEADER -->
     <header id="" class="menu-nav--blur bg-white select-none fixed z-30 w-full">
       <nav
-        class="container z-10 mx-auto flex items-center justify-between max-w-7xl p-6 lg:px-8"
+        class="container z-10 mx-auto p-4 flex items-center justify-between max-w-7xl lg:px-8"
         aria-label="Global"
       >
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <img class="h-8 w-auto" src="/assets/img/logo.png" alt="" />
+          <!-- <a href="#" class="-m-1.5 p-1.5"> -->
+          <a href="#inicio" class="p-1">
+            <img class="h-10 ml-1" src="/assets/img/logo.svg" alt="" />
           </a>
         </div>
 
@@ -62,16 +63,13 @@
           <button
             x-on:click="menuSideBar = true"
             type="button"
-            class="-m-2.5 inline-flex items center justify-center rounded-md p-2.5 text-surface-900"
+            class="inline-flex items center justify-center rounded-md p-2 text-surface-900"
           >
-            <span class="sr-only">Open main menu</span>
-
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
               fill="currentColor"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
               aria-hidden="true"
             >
               <path
@@ -115,10 +113,10 @@
         <div
           class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-surface-100"
         >
-          <div class="container">
-            <div class="flex h-20 -mx-3 px-6 items-center justify-between">
-              <a href="#" class="ml-0.5">
-                <img class="h-8 w-auto" src="/assets/img/logo.png" alt="" />
+          <div class="px-3">
+            <div class="flex h-20 px-3 items-center justify-between">
+              <a href="#inicio" class="">
+                <img class="h-10" src="/assets/img/logo.svg" alt="" />
               </a>
               <button
                 x-on:click="menuSideBar = false"
@@ -128,9 +126,9 @@
                 <span class="sr-only">Close menu</span>
                 <svg
                   class="h-6 w-6"
-                  fill="none"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
-                  stroke-width="1.5"
+                  stroke-width="2"
                   stroke="currentColor"
                   aria-hidden="true"
                 >
@@ -194,8 +192,7 @@
 
           <a
             class="inline-flex button mt-8"
-            href="https://www.instagram.com/studioanarodry/"
-            target="_blank"
+            href="#contato"
           >
             Agende agora
           </a>
@@ -361,7 +358,11 @@
       >
         <!-- LOCAL -->
         <div class="flex flex-col items-center">
-          <img class="h-16 xl:h-24 mt-16" src="/assets/img/icon/ic_local.svg" alt="" />
+          <img
+            class="h-16 xl:h-24 mt-16"
+            src="/assets/img/icon/ic_local.svg"
+            alt=""
+          />
 
           <p class="mt-6 font-semibold">Conheça nosso espaço</p>
           <p class="mt-4 text-secondary-800">
@@ -410,6 +411,15 @@
       </div>
     </section>
     <!-- /CONTACT -->
+
+    <footer class="w-full mt-[8rem] bg-secondary-50 p-7 text-center text-secondary-800 font-poppins text-sm">
+      <span>©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        – Todos os direitos reservados a Ana Paula
+      </span>
+    </footer>
   </body>
   <script src="/assets/js/index.js"></script>
 </html>
