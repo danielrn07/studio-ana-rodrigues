@@ -15,18 +15,18 @@
     <meta property="og:description" content="" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon" />
 
     <!-- IMPORTS CSS -->
-    <link rel="stylesheet" href="/assets/style/css/global-style.css" />
-    <link rel="stylesheet" href="/assets/plugins/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/style/css/global-style.css" />
+    <link rel="stylesheet" href="./assets/plugins/swiper/css/swiper.min.css" />
 
     <!-- IMPORTS JS -->
-    <script src="/assets/plugins/tailwind/tailwind.min.js"></script>
-    <script src="/assets/plugins/swiper/js/swiper-bundle.min.js"></script>
-    <script src="/assets/js/theme/tailwind.config.js"></script>
-    <script defer src="/assets/plugins/alpinejs/alpinejs.min.js"></script>
-    <script src="/assets/js/initialCommands.js"></script>
+    <script src="./assets/plugins/tailwind/tailwind.min.js"></script>
+    <script src="./assets/plugins/swiper/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/theme/tailwind.config.js"></script>
+    <script defer src="./assets/plugins/alpinejs/alpinejs.min.js"></script>
+    <script src="./assets/js/initialCommands.js"></script>
 
     <title>Studio Ana Rodry</title>
   </head>
@@ -55,7 +55,7 @@
         <div class="flex lg:flex-1">
           <!-- <a href="#" class="-m-1.5 p-1.5"> -->
           <a href="#inicio" class="p-1">
-            <img class="h-10 ml-1" src="/assets/img/logo.svg" alt="" />
+            <img class="h-10 ml-1" src="./assets/img/logo.svg" alt="" />
           </a>
         </div>
 
@@ -116,7 +116,7 @@
           <div class="px-3">
             <div class="flex h-20 px-3 items-center justify-between">
               <a href="#inicio" class="">
-                <img class="h-10" src="/assets/img/logo.svg" alt="" />
+                <img class="h-10" src="./assets/img/logo.svg" alt="" />
               </a>
               <button
                 x-on:click="menuSideBar = false"
@@ -190,12 +190,7 @@
             Realçando a sua beleza, da cabeça aos pés, com paixão e perfeição!
           </p>
 
-          <a
-            class="inline-flex button mt-8"
-            href="#contato"
-          >
-            Agende agora
-          </a>
+          <a class="inline-flex button mt-8" href="#contato"> Agende agora </a>
         </div>
       </div>
     </div>
@@ -360,7 +355,7 @@
         <div class="flex flex-col items-center">
           <img
             class="h-16 xl:h-24 mt-16"
-            src="/assets/img/icon/ic_local.svg"
+            src="./assets/img/icon/ic_local.svg"
             alt=""
           />
 
@@ -375,7 +370,7 @@
         <div class="flex flex-col items-center">
           <img
             class="h-16 xl:h-24 mt-16"
-            src="/assets/img/icon/ic_whatsapp.svg"
+            src="./assets/img/icon/ic_whatsapp.svg"
             alt=""
           />
 
@@ -394,7 +389,7 @@
         <div class="flex flex-col items-center">
           <img
             class="h-16 xl:h-24 mt-16"
-            src="/assets/img/icon/ic_instagram.svg"
+            src="./assets/img/icon/ic_instagram.svg"
             alt=""
           />
 
@@ -412,14 +407,19 @@
     </section>
     <!-- /CONTACT -->
 
-    <footer class="w-full mt-[8rem] bg-secondary-50 p-7 text-center text-secondary-800 font-poppins text-sm">
-      <span>©
+    <!-- FOOTER -->
+    <footer
+      class="w-full mt-[8rem] bg-secondary-50 p-7 text-center text-secondary-800 font-poppins text-sm"
+    >
+      <span
+        >©
         <script>
           document.write(new Date().getFullYear())
         </script>
         – Todos os direitos reservados a Ana Paula
       </span>
     </footer>
+    <!-- /FOOTER -->
   </body>
-  <script src="/assets/js/index.js"></script>
+  <script src="./assets/js/index.js"></script>
 </html>

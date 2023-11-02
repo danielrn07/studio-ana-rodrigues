@@ -4,7 +4,7 @@ function loadingPage() {
   setTimeout(() => {
     loadingElement.classList.add('hidden')
     document.body.style.removeProperty('overflow')
-  }, 2000)
+  }, 0)
 }
 
 window.onload = () => loadingPage()
