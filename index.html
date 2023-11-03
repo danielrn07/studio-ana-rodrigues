@@ -15,7 +15,11 @@
     <meta property="og:description" content="" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.svg"
+      type="image/x-icon"
+    />
 
     <!-- IMPORTS CSS -->
     <link rel="stylesheet" href="./assets/style/css/global-style.css" />
@@ -53,7 +57,6 @@
         aria-label="Global"
       >
         <div class="flex lg:flex-1">
-          <!-- <a href="#" class="-m-1.5 p-1.5"> -->
           <a href="#inicio" class="p-1">
             <img class="h-10 ml-1" src="./assets/img/logo.svg" alt="" />
           </a>
@@ -178,14 +181,14 @@
     <!-- /HEADER -->
 
     <!-- BANNER -->
-    <div id="inicio" class="h-[90vh] banner">
-      <div class="bg-secondary-50 bg-opacity-50 flex items-center h-full">
+    <div id="inicio" class="banner">
+      <div class="flex items-center bg-secondary-50 bg-opacity-80 md:bg-opacity-50 h-full">
         <div
-          class="container mx-auto lg:flex lg:flex-col max-w-7xl md:items-center p-6 lg:px-8 text-primary-500"
+          class="container mx-auto flex flex-col max-w-7xl items-center p-6 px-8 text-primary-500"
         >
-          <h1 class="text-6xl md:text-8xl font-nautigal">Ana Rodrigues</h1>
+          <h1 class="text-5xl md:text-8xl font-nautigal">Ana Rodrigues</h1>
           <p
-            class="mt-4 pr-40 md:pr-72 lg:pr-0 lg:text-center text-surface-900"
+            class="mt-4 md:pr-72 lg:pr-0 text-center text-surface-900"
           >
             Realçando a sua beleza, da cabeça aos pés, com paixão e perfeição!
           </p>
@@ -199,9 +202,7 @@
     <!-- OUR SERVICES -->
     <section id="nossos-servicos">
       <div class="container section flex flex-col items-center max-w-7xl">
-        <h1
-          class="text-center font-semibold text-3xl text-primary-500"
-        >
+        <h1 class="text-center font-semibold text-3xl text-primary-500">
           Nossos Serviços
         </h1>
         <div class="flex items-center">
@@ -238,7 +239,7 @@
           x-data="{ activeTab: 'tab1' }"
         >
           <ul
-            class="bg-secondary-500 px-8 md:px-24 py-6 flex justify-between items-center rounded-t-md font-medium"
+            class="bg-secondary-500 px-8 md:px-24 py-6 text-xs sm:text-sm space-x-2 flex justify-between items-center rounded-t-md font-medium"
           >
             <li class="">
               <a
@@ -315,7 +316,7 @@
       <div
         class="w-full pb-48 mb-20 section-gallery relative bg-cover bg-no-repeat"
         style="
-          background-image: url('https://images.unsplash.com/photo-1493799817216-4b57dda4229f?auto=format&fit=crop&q=80&w=2672&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          background-image: url('./assets/img/banner-gallery.jpg');
           background-attachment: fixed;
           background-position: top-center;
         "
@@ -342,9 +343,7 @@
 
     <!-- CONTACT -->
     <section id="contato" class="container section -mt-[48px]">
-      <h1
-        class="text-center font-semibold text-3xl text-primary-500"
-      >
+      <h1 class="text-center font-semibold text-3xl text-primary-500">
         Entre em Contato
       </h1>
 
@@ -352,7 +351,7 @@
         class="container xl:grid xl:grid-cols-3 xl:gap-8 md:h-45 space-y-6 xl:space-y-0 xl:mt-16"
       >
         <!-- LOCAL -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-center">
           <img
             class="h-16 xl:h-24 mt-16"
             src="./assets/img/icon/ic_local.svg"
@@ -367,7 +366,7 @@
         <!-- /LOCAL -->
 
         <!-- WHATSAPP -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-center">
           <img
             class="h-16 xl:h-24 mt-16"
             src="./assets/img/icon/ic_whatsapp.svg"
@@ -386,7 +385,7 @@
         <!-- /WHATSAPP -->
 
         <!-- INSTAGRAM -->
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-center">
           <img
             class="h-16 xl:h-24 mt-16"
             src="./assets/img/icon/ic_instagram.svg"
